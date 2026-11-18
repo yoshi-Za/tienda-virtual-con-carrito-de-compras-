@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual Varesa</title>
+  <link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Tienda Virtual Varesa</h1>
+        <p class="encabezado__texto">Elige tus productos y arma tu compra.</p>
+    </header>
+
+    <div class="contenedor">
+
+        <main class="catalogo" id="catalogo-seccion">
+            <h2 class="titulo-seccion">Catálogo</h2>
+
+            <div class="filtros">
+                <div class="filtros__botones" id="filtros"
+                     role="group" aria-label="Filtrar por categoría">
+                </div>
+                <p class="filtros__contador" id="contador" aria-live="polite">
+                    Mostrando 0 productos
+                </p>
+            </div>
+
+            <div class="catalogo__grid" id="catalogo"></div>
+        </main>
+
+        <aside class="carrito" id="carrito-seccion"
+               aria-label="Carrito de compras">
+
+            <h2 class="titulo-seccion">Tu carrito</h2>
+
+            <p class="carrito__vacio" id="carrito-vacio">
+                Tu carrito está vacío
+            </p>
+
+            <ul class="carrito__lista" id="carrito-lista"></ul>
+
+            <button type="button" class="boton boton--secundario"
+                    id="btn-vaciar">
+                Vaciar carrito
+            </button>
+
+            <section class="resumen" id="resumen"
+                     aria-label="Resumen de la compra">
+
+                <h3 class="resumen__titulo">Resumen de la compra</h3>
+
+                <dl class="resumen__lista">
+
+                    <div class="resumen__fila">
+                        <dt>Artículos:</dt>
+                        <dd id="resumen-articulos">0</dd>
+                    </div>
+
+                    <div class="resumen__fila">
+                        <dt>Subtotal:</dt>
+                        <dd id="resumen-subtotal">$ 0</dd>
+                    </div>
+
+                    <div class="resumen__fila">
+                        <dt>Descuento:</dt>
+                        <dd id="resumen-descuento">$ 0</dd>
+                    </div>
+
+                    <div class="resumen__fila resumen__fila--total">
+                        <dt>Total:</dt>
+                        <dd id="resumen-total">$ 0</dd>
+                    </div>
+
+                </dl>
+            </section>
+
+        </aside>
+
+    </div>
+
+    <footer class="pie">
+        <p>Tienda Virtual Varesa &middot; Proyecto de clase</p>
+    </footer>
+
+</body>
+</html>
